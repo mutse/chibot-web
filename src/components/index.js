@@ -1,0 +1,10 @@
+export { default as Navigation } from './Navigation';
+export { default as Hero } from './Hero';
+export { default as Features } from './Features';
+export { default as Product } from './Product';
+export { default as About } from './About';
+export { default as Contact } from './Contact';
+export { default as CTA } from './CTA';
+export { default as Footer } from './Footer';
+export { default as LanguageToggle } from './LanguageToggle';
+export { default as AnimatedBackground } from './AnimatedBackground'; 
