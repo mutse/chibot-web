@@ -132,17 +132,6 @@ const resources = {
             value: 'Wuhan, China',
             description: 'Our headquarters in Wuhan'
           }
-        },
-        support: {
-          title: 'Support Hours',
-          weekdays: 'Monday - Friday: 9:00 AM - 6:00 PM PST',
-          weekend: 'Saturday - Sunday: 10:00 AM - 4:00 PM PST',
-          response: 'We typically respond within 2-4 hours during business hours.'
-        },
-        liveChat: {
-          title: 'Live Chat',
-          description: 'Get instant help from our support team',
-          button: 'Start Chat'
         }
       },
       stats: {

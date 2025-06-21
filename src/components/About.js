@@ -55,7 +55,7 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400">2023</div>
+                <div className="text-3xl font-bold text-purple-400">2025</div>
                 <div className="text-gray-400">{t('about.story.founded')}</div>
               </div>
               <div className="text-center">
