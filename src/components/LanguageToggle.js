@@ -16,7 +16,7 @@ const LanguageToggle = () => {
     { code: 'zh-TW', name: '繁体中文', flag: '🇨🇳' }
   ];
 
-  const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0];
+  const currentLang = languages.find(lang => lang.code === i18n.language) || languages.find(lang => lang.code === 'en');
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
