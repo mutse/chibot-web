@@ -8,9 +8,12 @@ const LanguageToggle = () => {
   const dropdownRef = useRef(null);
 
   const languages = [
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
     { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'zh', name: '中文', flag: '🇨🇳' },
-    { code: 'ja', name: '日本語', flag: '🇯🇵' }
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: 'zh', name: '简体中文', flag: '🇨🇳' },
+    { code: 'zh-TW', name: '繁体中文', flag: '🇨🇳' }
   ];
 
   const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0];

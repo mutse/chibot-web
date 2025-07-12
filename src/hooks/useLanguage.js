@@ -7,11 +7,11 @@ export const useLanguage = () => {
     i18n.changeLanguage(lng);
   };
   
-  const currentLanguage = i18n.language || 'en' || 'ja';
+  const currentLanguage = i18n.language || 'en' || 'ja' || 'fr' || 'de';
   
   return {
     currentLanguage,
     changeLanguage,
-    isRTL: ['zh', 'en', 'ja'].includes(currentLanguage), // Support for RTL languages
+    isRTL: ['zh', 'en', 'ja', 'fr', 'de'].includes(currentLanguage), // Support for RTL languages
   };
 };
