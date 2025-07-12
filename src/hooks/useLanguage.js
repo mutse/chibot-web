@@ -7,7 +7,7 @@ export const useLanguage = () => {
     i18n.changeLanguage(lng);
   };
   
-  const currentLanguage = i18n.language || 'en' || 'ja' || 'fr' || 'de';
+  const currentLanguage = i18n.language || 'en';
   
   return {
     currentLanguage,
