@@ -29,6 +29,7 @@ i18n
   .use(initReactI18next) // 绑定 react-i18next
   .init({
     resources,
+    lng: 'en', // 强制设置默认语言为英语
     fallbackLng: 'en', // 默认语言
     debug: process.env.NODE_ENV === 'development',
     
