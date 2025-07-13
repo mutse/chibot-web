@@ -16,21 +16,21 @@ export default {
   features: {
     title: '強力な機能',
     subtitle: '知能的な会話に必要なすべて',
-    smart: {
-      title: 'スマートな会話',
-      desc: '自然で文脈を理解した対話を実現する先進的なAI理解力'
+    multiProvider: {
+      title: 'マルチプロバイダーサポート',
+      desc: 'OpenAI、Google Gemini、Claude AIモデルと対話'
     },
-    fast: {
-      title: '超高速',
-      desc: '最適化されたAIアルゴリズムによる即座の応答'
+    streaming: {
+      title: 'ストリーミング出力',
+      desc: 'AIモデルからのリアルタイム応答'
     },
-    secure: {
-      title: '安全でプライベート',
-      desc: 'エンドツーエンド暗号化で会話を安全に保護'
+    textToImage: {
+      title: 'テキストから画像',
+      desc: 'テキストプロンプトに基づいて画像を生成'
     },
-    global: {
-      title: '多言語対応',
-      desc: '50以上の言語で完璧な精度でコミュニケーション'
+    webSearch: {
+      title: 'ウェブ検索',
+      desc: 'オンラインウェブ検索でテキストを生成'
     }
   },
   product: {

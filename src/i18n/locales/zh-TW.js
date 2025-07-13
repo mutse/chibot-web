@@ -16,21 +16,21 @@ export default {
   features: {
     title: '強大功能',
     subtitle: '智能對話所需的一切功能',
-    smart: {
-      title: '智能對話',
-      desc: '先進的AI理解能力，實現自然、上下文感知的對話'
+    multiProvider: {
+      title: '多提供商支援',
+      desc: '與OpenAI、Google Gemini和Claude AI模型互動'
     },
-    fast: {
-      title: '閃電般快速',
-      desc: '基於優化AI算法的即時響應'
+    streaming: {
+      title: '串流輸出',
+      desc: 'AI模型的即時響應'
     },
-    secure: {
-      title: '安全私密',
-      desc: '端對端加密確保您的對話安全'
+    textToImage: {
+      title: '文字轉圖像',
+      desc: '基於文字提示生成圖像'
     },
-    global: {
-      title: '多語言支援',
-      desc: '支援50多種語言的精準交流'
+    webSearch: {
+      title: '網路搜尋',
+      desc: '透過線上網路搜尋生成文字'
     }
   },
   product: {

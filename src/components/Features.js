@@ -8,26 +8,26 @@ const Features = () => {
   const features = [
     { 
       icon: MessageCircle, 
-      title: t('features.smart.title'), 
-      desc: t('features.smart.desc'), 
+      title: t('features.multiProvider.title'), 
+      desc: t('features.multiProvider.desc'), 
       color: 'from-purple-500 to-pink-500' 
     },
     { 
       icon: Zap, 
-      title: t('features.fast.title'), 
-      desc: t('features.fast.desc'), 
+      title: t('features.streaming.title'), 
+      desc: t('features.streaming.desc'), 
       color: 'from-yellow-500 to-orange-500' 
     },
     { 
       icon: Shield, 
-      title: t('features.secure.title'), 
-      desc: t('features.secure.desc'), 
+      title: t('features.textToImage.title'), 
+      desc: t('features.textToImage.desc'), 
       color: 'from-green-500 to-teal-500' 
     },
     { 
       icon: Globe, 
-      title: t('features.global.title'), 
-      desc: t('features.global.desc'), 
+      title: t('features.webSearch.title'), 
+      desc: t('features.webSearch.desc'), 
       color: 'from-blue-500 to-indigo-500' 
     }
   ];

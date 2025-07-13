@@ -16,21 +16,21 @@ export default {
   features: {
     title: 'Leistungsstarke Funktionen',
     subtitle: 'Alles was Sie für intelligente Unterhaltungen brauchen',
-    smart: {
-      title: 'Intelligente Unterhaltungen',
-      desc: 'Fortschrittliches KI-Verständnis für natürliche, kontextbewusste Dialoge'
+    multiProvider: {
+      title: 'Multi-Provider-Unterstützung',
+      desc: 'Interagieren Sie mit OpenAI, Google Gemini und Claude AI-Modellen'
     },
-    fast: {
-      title: 'Blitzschnell',
-      desc: 'Sofortige Antworten durch optimierte KI-Algorithmen'
+    streaming: {
+      title: 'Streaming-Ausgabe',
+      desc: 'Echtzeit-Antworten von KI-Modellen'
     },
-    secure: {
-      title: 'Sicher & Privat',
-      desc: 'Ende-zu-Ende-Verschlüsselung hält Ihre Unterhaltungen sicher'
+    textToImage: {
+      title: 'Text zu Bild',
+      desc: 'Generieren Sie Bilder basierend auf Text-Eingaben'
     },
-    global: {
-      title: 'Mehrsprachig',
-      desc: 'Kommunizieren Sie in über 50 Sprachen mit perfekter Genauigkeit'
+    webSearch: {
+      title: 'Web-Suche',
+      desc: 'Generieren Sie Text mit Online-Web-Suche'
     }
   },
   product: {

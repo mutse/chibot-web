@@ -16,21 +16,21 @@ export default {
   features: {
     title: 'Powerful Features',
     subtitle: 'Everything you need for intelligent conversations',
-    smart: {
-      title: 'Smart Conversations',
-      desc: 'Advanced AI understanding for natural, context-aware dialogues'
+    multiProvider: {
+      title: 'Multi-provider Support',
+      desc: 'Interact with OpenAI, Google Gemini and Claude AI models'
     },
-    fast: {
-      title: 'Lightning Fast',
-      desc: 'Instant responses powered by optimized AI algorithms'
+    streaming: {
+      title: 'Streaming Output',
+      desc: 'Real-time responses from AI models'
     },
-    secure: {
-      title: 'Secure & Private',
-      desc: 'End-to-end encryption keeps your conversations safe'
+    textToImage: {
+      title: 'Text to Image',
+      desc: 'Generate images based on text prompts'
     },
-    global: {
-      title: 'Multi-Language',
-      desc: 'Communicate in over 50 languages with perfect accuracy'
+    webSearch: {
+      title: 'Web Search',
+      desc: 'Generate text with web search online'
     }
   },
   product: {

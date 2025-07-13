@@ -16,21 +16,21 @@ export default {
   features: {
     title: 'Fonctionnalités Puissantes',
     subtitle: 'Tout ce dont vous avez besoin pour des conversations intelligentes',
-    smart: {
-      title: 'Conversations Intelligentes',
-      desc: 'Compréhension IA avancée pour des dialogues naturels et contextuels'
+    multiProvider: {
+      title: 'Support Multi-Fournisseurs',
+      desc: 'Interagissez avec les modèles OpenAI, Google Gemini et Claude AI'
     },
-    fast: {
-      title: 'Ultra Rapide',
-      desc: 'Réponses instantanées grâce à des algorithmes IA optimisés'
+    streaming: {
+      title: 'Sortie en Streaming',
+      desc: 'Réponses en temps réel des modèles IA'
     },
-    secure: {
-      title: 'Sécurisé et Privé',
-      desc: 'Le chiffrement de bout en bout protège vos conversations'
+    textToImage: {
+      title: 'Texte vers Image',
+      desc: 'Générez des images basées sur des prompts textuels'
     },
-    global: {
-      title: 'Multilingue',
-      desc: 'Communiquez dans plus de 50 langues avec une précision parfaite'
+    webSearch: {
+      title: 'Recherche Web',
+      desc: 'Générez du texte avec recherche web en ligne'
     }
   },
   product: {
