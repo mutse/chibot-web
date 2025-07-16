@@ -17,6 +17,7 @@ const LanguageSwitcher = () => {
       ja: '日本語',
       fr: 'Français',
       de: 'Deutsch',
+      ga: 'Gaeilge',
       'zh-TW': '繁體中文'
     };
     return languageNames[language] || language;

@@ -11,6 +11,7 @@ const LanguageToggle = () => {
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
     { code: 'en', name: 'English', flag: '🇺🇸' },
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'ga', name: 'Gaeilge', flag: '🇮🇪'},
     { code: 'ja', name: '日本語', flag: '🇯🇵' },
     { code: 'zh', name: '简体中文', flag: '🇨🇳' },
     { code: 'zh-TW', name: '繁体中文', flag: '🇨🇳' }
