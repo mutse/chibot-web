@@ -47,9 +47,9 @@ const Hero = () => {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { value: '1M+', label: t('stats.users') },
-            { value: '50M+', label: t('stats.messages') },
-            { value: '50+', label: t('stats.languages') },
-            { value: '99.9%', label: t('stats.uptime') }
+            { value: '10M+', label: t('stats.messages') },
+            { value: '8+', label: t('stats.languages') },
+            { value: '90.9%', label: t('stats.uptime') }
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">{stat.value}</div>
