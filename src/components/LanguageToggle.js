@@ -9,12 +9,15 @@ const LanguageToggle = () => {
 
   const languages = [
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'de-CH', name: 'Schweizerdeutsch', flag: '🇨🇭' },
     { code: 'en', name: 'English', flag: '🇺🇸' },
     { code: 'es', name: 'Español', flag: '🇪🇸'},
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'ga', name: 'Gaeilge', flag: '🇮🇪'},
     { code: 'it', name: 'Italiano', flag: '🇮🇹'},    
     { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
+    { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'zh', name: '简体中文', flag: '🇨🇳' },
     { code: 'zh-TW', name: '繁体中文', flag: '🇨🇳' }
   ];

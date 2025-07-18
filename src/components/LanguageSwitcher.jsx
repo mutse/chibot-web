@@ -20,7 +20,10 @@ const LanguageSwitcher = () => {
       ga: 'Gaeilge',
       'zh-TW': '繁體中文',
       es: 'Español',
-      it: 'Italiano'
+      it: 'Italiano',
+      nl: 'Nederlands',
+      'de-CH': 'Schweizerdeutsch',
+      ms: 'Bahasa Malaysia'
     };
     return languageNames[language] || language;
   };

@@ -48,7 +48,7 @@ const Hero = () => {
           {[
             { value: '1M+', label: t('stats.users') },
             { value: '10M+', label: t('stats.messages') },
-            { value: '8+', label: t('stats.languages') },
+            { value: '10+', label: t('stats.languages') },
             { value: '90.9%', label: t('stats.uptime') }
           ].map((stat, index) => (
             <div key={index} className="text-center">
