@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { changeLanguage, supportedLanguages } from '../i18n';
+import './LanguageSwitcher.css';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -23,17 +24,22 @@ const LanguageSwitcher = () => {
       it: 'Italiano',
       nl: 'Nederlands',
       'de-CH': 'Schweizerdeutsch',
-      ms: 'Bahasa Malaysia'
+      ms: 'Bahasa Malaysia',
+      'en-SG': 'Singapore English',
+      el: 'Ελληνικά',
+      pl: 'Polski',
+      tr: 'Türkçe',
+      'en-US': 'American English'
     };
     return languageNames[language] || language;
   };
 
   return (
     <div className="language-switcher">
-      <select 
-        value={i18n.language} 
-        onChange={handleLanguageChange}
+      <select
         className="language-select"
+        value={i18n.language}
+        onChange={handleLanguageChange}
       >
         {supportedLanguages.map((language) => (
           <option key={language} value={language}>
