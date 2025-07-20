@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 // 支持的语言列表
-const supportedLanguages = ['en', 'ga', 'zh', 'ja', 'fr', 'de', 'zh-TW', 'it', 'es', 'nl', 'de-CH', 'ms'];
+const supportedLanguages = ['en', 'ga', 'zh', 'ja', 'fr', 'de', 'zh-TW', 'it', 'es', 'nl', 'de-CH', 'ms', 'en-SG', 'el', 'pl', 'tr', 'en-US'];
 
 // 动态加载语言资源
 const loadLanguageResources = async (language) => {

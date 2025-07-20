@@ -1,0 +1,48 @@
+/* 语言下拉框滚动条样式 */
+.language-dropdown {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 #e5e7eb;
+  overflow-y: auto;
+  /*max-height: 320px;*/
+}
+
+.language-dropdown::-webkit-scrollbar {
+  width: 8px;
+  display: block !important;
+}
+
+.language-dropdown::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+.language-dropdown::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 4px;
+}
+
+.language-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* 确保下拉框在移动设备上也能正常显示 */
+@media (max-width: 768px) {
+  .language-dropdown {
+    max-height: 60vh !important; /* 在移动设备上限制高度为视口高度的60% */
+    width: 260px !important;
+  }
+}
+
+/* 强制显示滚动条 */
+.language-dropdown {
+  overflow-y: scroll !important;
+  scrollbar-gutter: stable;
+}
+
+/* 确保所有语言选项都能显示 */
+.language-dropdown button {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+} 

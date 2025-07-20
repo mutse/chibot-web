@@ -1,26 +1,43 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { supportedLanguages } from '../i18n';
+import './LanguageToggle.css';
 
 const LanguageToggle = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
+  // 按照i18n配置中的supportedLanguages顺序定义语言列表
   const languages = [
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-    { code: 'de-CH', name: 'Schweizerdeutsch', flag: '🇨🇭' },
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'es', name: 'Español', flag: '🇪🇸'},
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
     { code: 'ga', name: 'Gaeilge', flag: '🇮🇪'},
-    { code: 'it', name: 'Italiano', flag: '🇮🇹'},    
-    { code: 'ja', name: '日本語', flag: '🇯🇵' },
-    { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
-    { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'zh', name: '简体中文', flag: '🇨🇳' },
-    { code: 'zh-TW', name: '繁体中文', flag: '🇨🇳' }
+    { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'zh-TW', name: '繁體中文', flag: '🇨🇳' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹'},    
+    { code: 'es', name: 'Español', flag: '🇪🇸'},
+    { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
+    { code: 'de-CH', name: 'Schweizerdeutsch', flag: '🇨🇭' },
+    { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
+    { code: 'en-SG', name: 'Singapore English', flag: '🇸🇬'},
+    { code: 'el', name: 'Ελληνικά', flag: '🇬🇷'},
+    { code: 'pl', name: 'Polski', flag: '🇵🇱'},
+    { code: 'tr', name: 'Türkçe', flag: '🇹🇷'},
+    { code: 'en-US', name: 'American English', flag: '🇺🇸'}
   ];
+
+  // 验证所有支持的语言都在列表中
+  const missingLanguages = supportedLanguages.filter(code => 
+    !languages.find(lang => lang.code === code)
+  );
+  
+  if (missingLanguages.length > 0) {
+    console.warn('Missing languages in UI:', missingLanguages);
+  }
 
   const currentLang = languages.find(lang => lang.code === i18n.language) || languages.find(lang => lang.code === 'en');
 
@@ -42,33 +59,18 @@ const LanguageToggle = () => {
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
+      <select
+        value={i18n.language}
+        onChange={e => changeLanguage(e.target.value)}
         className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300"
+        style={{ maxHeight: '200px', overflowY: 'auto' }}
       >
-        <Globe className="w-4 h-4" />
-        <span className="text-sm font-medium">
-          {currentLang.flag} {currentLang.name}
-        </span>
-        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
-      </button>
-
-      {isOpen && (
-        <div className="absolute top-full mt-2 right-0 bg-white/95 backdrop-blur-sm border border-white/20 rounded-lg shadow-lg overflow-hidden z-50">
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => changeLanguage(lang.code)}
-              className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-100 transition-colors ${
-                i18n.language === lang.code ? 'bg-gray-100 text-blue-600' : 'text-gray-700'
-              }`}
-            >
-              <span className="text-lg">{lang.flag}</span>
-              <span className="text-sm font-medium">{lang.name}</span>
-            </button>
-          ))}
-        </div>
-      )}
+        {languages.map((lang) => (
+          <option key={lang.code} value={lang.code}>
+            {lang.flag} {lang.name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
