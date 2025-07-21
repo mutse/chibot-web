@@ -11,23 +11,23 @@ const LanguageToggle = () => {
 
   // 按照i18n配置中的supportedLanguages顺序定义语言列表
   const languages = [
-    { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'ga', name: 'Gaeilge', flag: '🇮🇪'},
-    { code: 'zh', name: '简体中文', flag: '🇨🇳' },
-    { code: 'ja', name: '日本語', flag: '🇯🇵' },
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-    { code: 'zh-TW', name: '繁體中文', flag: '🇨🇳' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹'},    
-    { code: 'es', name: 'Español', flag: '🇪🇸'},
-    { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'de-CH', name: 'Schweizerdeutsch', flag: '🇨🇭' },
-    { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
-    { code: 'en-SG', name: 'Singapore English', flag: '🇸🇬'},
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
     { code: 'el', name: 'Ελληνικά', flag: '🇬🇷'},
+    { code: 'en-SG', name: 'Singapore English', flag: '🇸🇬'},
+    { code: 'en-US', name: 'American English', flag: '🇺🇸'},
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'es', name: 'Español', flag: '🇪🇸'},
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'ga', name: 'Gaeilge', flag: '🇮🇪'},
+    { code: 'it', name: 'Italiano', flag: '🇮🇹'}, 
+    { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
+    { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'pl', name: 'Polski', flag: '🇵🇱'},
     { code: 'tr', name: 'Türkçe', flag: '🇹🇷'},
-    { code: 'en-US', name: 'American English', flag: '🇺🇸'}
+    { code: 'zh', name: '简体中文', flag: '🇨🇳' },
+    { code: 'zh-TW', name: '繁體中文', flag: '🇨🇳' }  
   ];
 
   // 验证所有支持的语言都在列表中
