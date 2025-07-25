@@ -28,6 +28,7 @@ const LanguageSwitcher = () => {
       'en-SG': 'Singapore English',
       el: 'Ελληνικά',
       pl: 'Polski',
+      ru: 'русский язык',
       tr: 'Türkçe',
       'en-US': 'American English'
     };

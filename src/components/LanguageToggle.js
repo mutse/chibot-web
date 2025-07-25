@@ -25,6 +25,7 @@ const LanguageToggle = () => {
     { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
     { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'pl', name: 'Polski', flag: '🇵🇱'},
+    { code: 'ru', name: 'русский язык', flag: '🇷🇺'},
     { code: 'tr', name: 'Türkçe', flag: '🇹🇷'},
     { code: 'zh', name: '简体中文', flag: '🇨🇳' },
     { code: 'zh-TW', name: '繁體中文', flag: '🇨🇳' }  
