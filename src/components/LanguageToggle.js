@@ -20,6 +20,7 @@ const LanguageToggle = () => {
     { code: 'es', name: 'Español', flag: '🇪🇸'},
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'ga', name: 'Gaeilge', flag: '🇮🇪'},
+    { code: 'hi', name: 'हिन्दी', flag: '🇮🇳'},
     { code: 'it', name: 'Italiano', flag: '🇮🇹'}, 
     { code: 'ja', name: '日本語', flag: '🇯🇵' },
     { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
