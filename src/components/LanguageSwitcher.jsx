@@ -31,7 +31,8 @@ const LanguageSwitcher = () => {
       ru: 'русский язык',
       tr: 'Türkçe',
       'en-US': 'American English',
-      hi: 'हिन्दी'
+      hi: 'हिन्दी',
+      'pt-BR': 'Português'
     };
     return languageNames[language] || language;
   };
