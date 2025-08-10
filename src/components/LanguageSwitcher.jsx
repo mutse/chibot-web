@@ -32,7 +32,8 @@ const LanguageSwitcher = () => {
       tr: 'Türkçe',
       'en-US': 'American English',
       hi: 'हिन्दी',
-      'pt-BR': 'Português'
+      'pt-BR': 'Português',
+      ko: '한국어'
     };
     return languageNames[language] || language;
   };

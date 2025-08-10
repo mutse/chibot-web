@@ -23,6 +23,7 @@ const LanguageToggle = () => {
     { code: 'hi', name: 'हिन्दी', flag: '🇮🇳'},
     { code: 'it', name: 'Italiano', flag: '🇮🇹'}, 
     { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: 'ko', name: '한국어', flag: '🇰🇷'},
     { code: 'ms', name: 'Bahasa Malaysia', flag: '🇲🇾' },
     { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
     { code: 'pl', name: 'Polski', flag: '🇵🇱'},
