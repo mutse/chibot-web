@@ -12,6 +12,6 @@ export const useLanguage = () => {
   return {
     currentLanguage,
     changeLanguage,
-    isRTL: ['zh', 'en', 'ja', 'fr', 'de'].includes(currentLanguage), // Support for RTL languages
+    isRTL: ['zh', 'zh-TW', 'zh-HK', 'en', 'ja', 'fr', 'de'].includes(currentLanguage), // Support for RTL languages
   };
 };

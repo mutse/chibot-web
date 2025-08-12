@@ -20,6 +20,7 @@ const LanguageSwitcher = () => {
       de: 'Deutsch',
       ga: 'Gaeilge',
       'zh-TW': '繁體中文',
+      'zh-HK': '繁體中文',
       es: 'Español',
       it: 'Italiano',
       nl: 'Nederlands',
