@@ -30,6 +30,7 @@ const LanguageSwitcher = () => {
       el: 'Ελληνικά',
       pl: 'Polski',
       ru: 'русский язык',
+      sv: 'Swedish',
       tr: 'Türkçe',
       'en-US': 'American English',
       hi: 'हिन्दी',

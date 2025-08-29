@@ -29,6 +29,7 @@ const LanguageToggle = () => {
     { code: 'pl', name: 'Polski', flag: '🇵🇱'},
     { code: 'pt-BR', name: 'Português', flag: '🇧🇷'},
     { code: 'ru', name: 'русский язык', flag: '🇷🇺'},
+    { code: 'sv', name: 'Swedish', flag: '🇸🇪'},
     { code: 'tr', name: 'Türkçe', flag: '🇹🇷'},
     { code: 'zh', name: '简体中文', flag: '🇨🇳' },
     { code: 'zh-TW', name: '繁體中文', flag: '🇨🇳' },
