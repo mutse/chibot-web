@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, Play, Monitor, Smartphone, Zap } from 'lucide-react';
 
@@ -46,21 +47,11 @@ const Product = () => {
   ];
 
   const nextTab = () => {
-    console.log('nextTab clicked, current:', activeTab);
-    setActiveTab((prev) => {
-      const next = (prev + 1) % features.length;
-      console.log('nextTab: prev -> next:', prev, '->', next);
-      return next;
-    });
+    setActiveTab((prev) => (prev + 1) % features.length);
   };
 
   const prevTab = () => {
-    console.log('prevTab clicked, current:', activeTab);
-    setActiveTab((prev) => {
-      const next = (prev - 1 + features.length) % features.length;
-      console.log('prevTab: prev -> next:', prev, '->', next);
-      return next;
-    });
+    setActiveTab((prev) => (prev - 1 + features.length) % features.length);
   };
 
   const activeFeature = features[activeTab];
@@ -142,9 +133,12 @@ const Product = () => {
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-purple-600/20 to-blue-600/20 p-2 backdrop-blur-sm border border-white/10">
-              <img
+              <Image
                 src={activeFeature.image}
                 alt={activeFeature.title}
+                width={1600}
+                height={1256}
+                priority
                 className="w-full h-auto rounded-xl shadow-2xl"
               />
               
