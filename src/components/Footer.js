@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { MessageCircle } from 'lucide-react';
 
@@ -10,9 +11,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <img 
-              src="/logo.png?raw=true"
-              alt="Chibot AI Logo" 
+            <Image
+              src="/logo.png"
+              alt="Chibot AI Logo"
+              width={32}
+              height={32}
               className="w-8 h-8 rounded-lg object-contain"
               onError={(e) => {
                 e.target.style.display = 'none';
