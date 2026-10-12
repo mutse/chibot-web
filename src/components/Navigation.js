@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import LanguageToggle from './LanguageToggle';
@@ -21,9 +22,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center gap-2">
-            <img 
-              src="/logo.png?raw=true" 
-              alt="Chibot AI Logo" 
+            <Image
+              src="/logo.png"
+              alt="Chibot AI Logo"
+              width={40}
+              height={40}
               className="w-10 h-10 rounded-xl object-contain"
               onError={(e) => {
                 e.target.style.display = 'none';
